@@ -53,7 +53,7 @@ const content = [
 ];
 export default function Achivements() {
 	return (
-		<div className='max-w-7xl mx-auto'>
+		<div className='max-w-7xl mx-auto' id='Achivements'>
 			<h1 className='text-4xl font-bold mb-12 mt-16 '>
 				Highlights From my Journey
 			</h1>

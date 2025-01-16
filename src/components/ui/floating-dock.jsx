@@ -11,11 +11,7 @@ import Link from 'next/link';
 import { useRef, useState } from 'react';
 import ShinyButton from '@/components/ui/shiny-button';
 
-export const FloatingDock = ({
-	items,
-	desktopClassName,
-	mobileClassName,
-}) => {
+export const FloatingDock = ({ items, desktopClassName }) => {
 	return (
 		<>
 			<FloatingDockDesktop
@@ -33,11 +29,17 @@ const FloatingDockDesktop = ({ items, className }) => {
 			onMouseMove={e => mouseX.set(e.pageX)}
 			onMouseLeave={() => mouseX.set(Infinity)}
 			className={cn(
-				'mx-auto flex h-16 w-full gap-4 items-end justify-center rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3 border-x-8 border-hidden',
+				'mx-auto flex h-16 w-full max-w-3xl gap-4 items-end justify-center rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3 border-x-8 border-hidden',
 				className
-			)}>
+			)}
+			style={{ backgroundColor: 'rgba(255, 255, 255, 0.6)' }}>
 			{items.map(item => (
-				<IconContainer mouseX={mouseX} key={item.title} {...item} />
+				<IconContainer
+					mouseX={mouseX}
+					key={item.title}
+					{...item}
+					href={item.href}
+				/>
 			))}
 		</motion.div>
 	);
@@ -58,23 +60,23 @@ function IconContainer({ mouseX, title, icon, href }) {
 	let widthTransform = useTransform(
 		distance,
 		[-150, 0, 150],
-		[50, 65, 50] // Reduced from [40, 80, 40]
+		[50, 65, 50]
 	);
 	let heightTransform = useTransform(
 		distance,
 		[-150, 0, 150],
-		[50, 65, 50] // Reduced from [40, 80, 40]
+		[50, 65, 50]
 	);
 
 	let widthTransformIcon = useTransform(
 		distance,
 		[-150, 0, 150],
-		[25, 32, 25] // Reduced from [20, 40, 20]
+		[25, 32, 25]
 	);
 	let heightTransformIcon = useTransform(
 		distance,
 		[-150, 0, 150],
-		[25, 32, 25] // Reduced from [20, 40, 20]
+		[25, 32, 25]
 	);
 	let width = useSpring(widthTransform, {
 		mass: 0.1,
@@ -108,10 +110,10 @@ function IconContainer({ mouseX, title, icon, href }) {
 					style={{ width, height }}
 					onMouseEnter={() => setHovered(true)}
 					onMouseLeave={() => setHovered(false)}
-					className='aspect-square rounded-full flex items-center justify-center relative'>
+					className='aspect-square rounded-full flex items-center justify-center relative overflow'>
 					<motion.div
 						style={{ width: widthIcon, height: heightIcon }}
-						className='flex items-center justify-center'>
+						className='flex items-center justify-center '>
 						{icon}
 					</motion.div>
 				</motion.div>

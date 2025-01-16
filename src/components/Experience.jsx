@@ -38,7 +38,7 @@ export default function Experience() {
 		},
 	];
 	return (
-		<div className='max-w-7xl mx-auto px-8'>
+		<div id='Experience' className='max-w-7xl mx-auto px-8'>
 			<h1 className='text-4xl font-bold mb-12 mt-16 '>Experience</h1>
 			<AnimatedTestimonials testimonials={testimonials} />
 		</div>

@@ -1,14 +1,13 @@
 import React from 'react';
 import { FloatingDock } from '@/components/ui/floating-dock';
 import {
-	IconBrandGithub,
-	IconBrandX,
-	IconExchange,
 	IconHome,
-	IconNewSection,
-	IconTerminal2,
+	IconBriefcase,
+	IconDeviceImacCode,
+	IconTrophy,
+	IconPhone,
 } from '@tabler/icons-react';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
 	const links = [
@@ -17,41 +16,36 @@ export default function Navbar() {
 			icon: (
 				<IconHome className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
-			href: '#',
+			href: '#Profile',
 		},
 		{
-			title: 'Aceternity UI',
+			title: 'Experience',
 			icon: (
-				<Image
-					src='https://assets.aceternity.com/logo-dark.png'
-					width={20}
-					height={20}
-					alt='Aceternity Logo'
-				/>
+				<IconBriefcase className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
-			href: '#',
+			href: '#Experience',
 		},
 		{
-			title: 'Changelog',
+			title: 'Projects',
 			icon: (
-				<IconExchange className='h-full w-full text-neutral-500 dark:text-neutral-300' />
+				<IconDeviceImacCode className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
-			href: '#',
+			href: '#Projects',
 		},
 
 		{
-			title: 'Twitter',
+			title: 'Achivements',
 			icon: (
-				<IconBrandX className='h-full w-full text-neutral-500 dark:text-neutral-300' />
+				<IconTrophy className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
-			href: '#',
+			href: '#Achivements',
 		},
 		{
-			title: 'GitHub',
+			title: 'Contact',
 			icon: (
-				<IconBrandGithub className='h-full w-full text-neutral-500 dark:text-neutral-300' />
+				<IconPhone className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
-			href: '#',
+			href: '#Contact',
 		},
 	];
 	return (

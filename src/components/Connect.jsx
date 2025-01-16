@@ -68,7 +68,7 @@ export default function Connect() {
 		slug => `https://cdn.simpleicons.org/${slug}/${slug}`
 	);
 	return (
-		<div className='min-h-screen py-20 px-4 md:px-8'>
+		<div className='min-h-screen py-20 px-4 md:px-8' id='Contact'>
 			<div className='flex flex-col lg:flex-row w-full max-w-7xl mx-auto gap-8 items-center justify-center'>
 				<div className='w-full lg:w-1/2 h-full'>
 					<SignupFormDemo />

@@ -6,10 +6,13 @@ import TypingAnimation from '@/components/ui/typing-animation';
 import { Highlight } from '@/components/ui/hero-highlight';
 import { RainbowButton } from '@/components/ui/rainbow-button';
 import BoxReveal from '@/components/ui/box-reveal';
+import Link from 'next/link';
 
 export default function Profile() {
 	return (
-		<div className=' bg-neutral-900 flex flex-row items-start justify-center w-full text-white p-4'>
+		<div
+			id='Profile'
+			className=' bg-neutral-900 flex flex-row items-start justify-center w-full text-white p-4'>
 			<StarsBackground />
 			<div className='my-16 min:mx-4 mx-auto flex flex-col gap-4'>
 				<BoxReveal>
@@ -47,7 +50,9 @@ export default function Profile() {
 				</BoxReveal>
 				<BoxReveal>
 					<div className='flex flex-row items-center gap-4'>
-						<RainbowButton text='Connect'></RainbowButton>
+						<Link href='#Contact'>
+							<RainbowButton text='Connect'></RainbowButton>
+						</Link>
 					</div>
 				</BoxReveal>
 			</div>

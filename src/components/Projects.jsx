@@ -2,7 +2,7 @@ import { HoverEffect } from '../components/ui/card-hover-effect';
 
 export default function Projects() {
 	return (
-		<div className='max-w-7xl mx-auto px-8'>
+		<div id='Projects' className='max-w-7xl mx-auto px-8'>
 			<h1 className='text-4xl font-bold mb-12 mt-16 '>Projects</h1>
 			<HoverEffect items={projects} />
 		</div>
@@ -38,7 +38,7 @@ const projects = [
 		title: 'Forkify',
 		description:
 			'User-friendly recipe management web app with vaious recipes, dynamically displayed via API integration.',
-		link: 'forkify-app-mu.vercel.app',
+		link: 'https://forkify-app-mu.vercel.app',
 		image: '/images/projects/forkify.png',
 		github: 'https://github.com/utkarshmandloi12/Forkify_App',
 	},
@@ -54,7 +54,7 @@ const projects = [
 	{
 		title: 'Previous Portfolio',
 		description: 'A rookie portfolio by a first year student',
-		link: 'portfolio-sooty-five-24.vercel.app',
+		link: 'https://portfolio-sooty-five-24.vercel.app',
 		image: '/images/projects/old_portfolio.png',
 		github: 'https://github.com/utkarshmandloi12/Old_portfolio',
 	},
