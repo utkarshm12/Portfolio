@@ -120,7 +120,7 @@ export const StarsBackground = ({
 	return (
 		<canvas
 			ref={canvasRef}
-			className={cn(' h-[40rem] w-full absolute', className)}
+			className={cn(' h-[31rem] w-full absolute', className)}
 		/>
 	);
 };

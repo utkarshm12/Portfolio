@@ -17,15 +17,22 @@ export default function Profile() {
 			<div className='my-16 min:mx-4 mx-auto flex flex-col gap-4'>
 				<BoxReveal>
 					<div>
-						<TypingAnimation>Hey there!!</TypingAnimation>
+						<TypingAnimation className='text-2xl sm:text-3xl md:text-4xl'>
+							Hey there!!
+						</TypingAnimation>
+					</div>
+					<div>
+						<TypingAnimation className='text-2xl sm:text-3xl md:text-4xl'>
+							Welcome to Utkarsh's Portfolio
+						</TypingAnimation>
 					</div>
 				</BoxReveal>
 				<BoxReveal>
-					<div className='flex flex-row items-center text-3xl mb-2 gap-2'>
+					<div className='flex flex-row items-center text-xl mb-2 gap-2'>
 						I'm a{' '}
 						<Highlight className='bg-white dark:bg-neutral-800 px-2 py-2 rounded-lg'>
 							<WordRotate
-								className='text-3xl font-bold text-black dark:text-white'
+								className='text-2xl sm:text-3xl md:text-4xl font-bold text-black dark:text-white'
 								words={[
 									'Full-Stack Developer',
 									'Competitive Programmer',
@@ -51,7 +58,7 @@ export default function Profile() {
 				<BoxReveal>
 					<div className='flex flex-row items-center gap-4'>
 						<Link href='#Contact'>
-							<RainbowButton text='Connect'></RainbowButton>
+							<RainbowButton text='Contact Me'></RainbowButton>
 						</Link>
 					</div>
 				</BoxReveal>

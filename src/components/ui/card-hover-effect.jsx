@@ -11,6 +11,12 @@ import {
 	IconBrandNextjs,
 	IconBrandCss3,
 	IconBrandJavascript,
+	IconBrandGit,
+	IconBrandMysql,
+	IconBrandNodejs,
+	IconBrandLeetcode,
+	IconBrandReact,
+	IconBrandCpp,
 } from '@tabler/icons-react';
 
 export const HoverEffect = ({ items, className }) => {
@@ -36,17 +42,16 @@ export const HoverEffect = ({ items, className }) => {
 								layoutId='hoverBackground'
 								initial={{ opacity: 0 }}
 								animate={{
-									opacity: 1,
-									transition: { duration: 0.15 },
+									opacity: 0.15,
+									transition: { duration: 0.1 },
 								}}
 								exit={{
 									opacity: 0,
-									transition: { duration: 0.15, delay: 0.2 },
+									transition: { duration: 0.1, delay: 0.1 },
 								}}
 							/>
 						)}
 					</AnimatePresence>
-
 					<CardContainer
 						className={cn(
 							'rounded-2xl m-6 h-96 w-full bg-tranparent relative z-50',
@@ -54,17 +59,17 @@ export const HoverEffect = ({ items, className }) => {
 						)}>
 						<CardBody className='bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
 							<CardItem
-								translateZ='50'
+								translateZ='20'
 								className='text-xl font-bold text-neutral-600 dark:text-white'>
 								{item.title}
 							</CardItem>
 							<CardItem
 								as='p'
-								translateZ='60'
+								translateZ='20'
 								className='text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300'>
 								{item.description}
 							</CardItem>
-							<CardItem translateZ='100' className='w-full mt-4'>
+							<CardItem translateZ='20' className='w-full mt-4'>
 								<Image
 									src={item.image}
 									height='1000'
@@ -96,7 +101,7 @@ export const HoverEffect = ({ items, className }) => {
 				</Link>
 			))}
 			<div
-				className='relative flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 md:shadow-xl  h-[30rem]'
+				className='relative flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 dark:bg-black md:shadow-xl  h-[30rem]'
 				onClick={() =>
 					window.open('https://github.com/utkarshmandloi12', '_blank')
 				}>
@@ -107,14 +112,18 @@ export const HoverEffect = ({ items, className }) => {
 				<OrbitingCircles iconSize={40}>
 					<IconBrandGithub />
 					<IconBrandNextjs />
-					<IconBrandGithub />
+					<IconBrandGit />
 					<IconBrandJavascript />
+					<IconBrandMysql />
 				</OrbitingCircles>
 				<OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
 					<IconBrandGithub />
-					<IconBrandNextjs />
+					<IconBrandLeetcode />
 					<IconBrandCss3 />
 					<IconBrandJavascript />
+					<IconBrandNodejs />
+					<IconBrandReact />
+					<IconBrandCpp />
 				</OrbitingCircles>
 			</div>
 		</div>
