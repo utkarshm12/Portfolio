@@ -16,7 +16,7 @@ export function ThemeToggle() {
 	return (
 		<button
 			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-			className='h-full w-full text-neutral-100 dark:text-neutral-300'
+			className='h-full w-full text-neutral-500 dark:text-neutral-300'
 			aria-label='Toggle theme'>
 			{theme === 'dark' ? (
 				<IconSun className='' />

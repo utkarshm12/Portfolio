@@ -11,24 +11,33 @@ import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 export default function Navbar() {
 	const links = [
+		// {
+		// 	title: 'Home',
+		// 	icon: (
+		// 		<span className='h-full w-full text-neutral-500 dark:text-neutral-300'>
+		// 			U12065
+		// 		</span>
+		// 	),
+		// 	href: '#Profile',
+		// },
 		{
 			title: 'Home',
 			icon: (
-				<IconHome className='h-full w-full text-neutral-100 dark:text-neutral-300' />
+				<IconHome className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
 			href: '#Profile',
 		},
 		{
 			title: 'Experience',
 			icon: (
-				<IconBriefcase className='h-full w-full text-neutral-100 dark:text-neutral-300' />
+				<IconBriefcase className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
 			href: '#Experience',
 		},
 		{
 			title: 'Projects',
 			icon: (
-				<IconDeviceImacCode className='h-full w-full text-neutral-100 dark:text-neutral-300' />
+				<IconDeviceImacCode className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
 			href: '#Projects',
 		},
@@ -36,21 +45,21 @@ export default function Navbar() {
 		{
 			title: 'Achivements',
 			icon: (
-				<IconTrophy className='h-full w-full text-neutral-100 dark:text-neutral-300' />
+				<IconTrophy className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
 			href: '#Achivements',
 		},
 		{
 			title: 'Contact',
 			icon: (
-				<IconPhone className='h-full w-full text-neutral-100 dark:text-neutral-300' />
+				<IconPhone className='h-full w-full text-neutral-500 dark:text-neutral-300' />
 			),
 			href: '#Contact',
 		},
 		{
 			title: 'Theme',
 			icon: (
-				<div className='h-full w-full text-neutra-100 dark:text-neutral-100'>
+				<div className='h-full w-full text-neutra-500 dark:text-neutral-100'>
 					<ThemeToggle />
 				</div>
 			),

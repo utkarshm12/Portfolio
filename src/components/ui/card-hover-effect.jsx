@@ -54,7 +54,7 @@ export const HoverEffect = ({ items, className }) => {
 					</AnimatePresence>
 					<CardContainer
 						className={cn(
-							'rounded-2xl m-6 h-96 w-full bg-tranparent relative z-50',
+							'rounded-2xl m-0 h-96 w-full bg-tranparent relative z-50',
 							className
 						)}>
 						<CardBody className='bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>

@@ -32,7 +32,7 @@ export default function Profile() {
 						I'm a{' '}
 						<Highlight className='bg-white dark:bg-neutral-800 px-2 py-2 rounded-lg'>
 							<WordRotate
-								className='text-2xl sm:text-3xl md:text-4xl font-bold text-black dark:text-white'
+								className='text-xl sm:text-3xl md:text-4xl font-bold text-white dark:text-black'
 								words={[
 									'Full-Stack Developer',
 									'Competitive Programmer',
