@@ -17,12 +17,12 @@ export default function Profile() {
 			<div className='my-16 min:mx-4 mx-auto flex flex-col gap-4'>
 				<BoxReveal>
 					<div>
-						<TypingAnimation className='text-2xl sm:text-3xl md:text-4xl'>
+						<TypingAnimation className='text-xl sm:text-4xl md:text-5xl'>
 							Hey there!!
 						</TypingAnimation>
 					</div>
 					<div>
-						<TypingAnimation className='text-2xl sm:text-3xl md:text-4xl'>
+						<TypingAnimation className='text-xl sm:text-4xl md:text-5xl'>
 							Welcome to Utkarsh's Portfolio
 						</TypingAnimation>
 					</div>
