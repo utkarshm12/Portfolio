@@ -9,12 +9,21 @@ const slugs = [
 	'linkedin',
 	'leetcode',
 	'codechef',
-	'instagram',
 
 	// Programming Languages
 	'javascript',
 	'cplusplus',
 	'c',
+	'java',
+	'python',
+	'R',
+	'html',
+	'css',
+
+	// Frameworks & Libraries
+	'bootstrap',
+	'nextjs',
+	'angular',
 
 	// Web Technologies
 	'html5',
@@ -34,33 +43,7 @@ const slugs = [
 	'git',
 	'docker',
 	'figma',
-	// Social & Coding Platforms
-	'github',
-	'twitter',
-	'discord',
-	'linkedin',
-	'codechef',
-
-	// Programming Languages
-
-	'cplusplus',
-
-	// Web Technologies
-	'html5',
-	'css3',
-	'react',
-	'nextdotjs',
-	'nodedotjs',
-	'express',
-
-	// Databases
-	'mongodb',
-	'postgresql',
-	'mysql',
-
-	// Tools & Platforms
-	'git',
-	'figma',
+	'vercel',
 ];
 
 export default function Connect() {

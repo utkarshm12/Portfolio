@@ -67,7 +67,7 @@ export default function Navbar() {
 		},
 	];
 	return (
-		<div className='fixed items-center justify-center w-full lg:m-2 lg:px-4 z-30'>
+		<div className='fixed items-center justify-center w-full lg:m-2 lg:px-4 z-30 top-4'>
 			<FloatingDock items={links} />
 		</div>
 	);

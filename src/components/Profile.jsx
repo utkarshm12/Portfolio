@@ -12,7 +12,7 @@ export default function Profile() {
 	return (
 		<div
 			id='Profile'
-			className=' bg-neutral-900 flex flex-row items-start justify-center w-full text-white p-4'>
+			className=' bg-neutral-900 flex flex-row items-start justify-center w-full h-[100vh] sm:h-auto text-white p-4'>
 			<StarsBackground />
 			<div className='my-16 min:mx-4 mx-auto flex flex-col gap-4'>
 				<BoxReveal>
@@ -30,7 +30,7 @@ export default function Profile() {
 				<BoxReveal>
 					<div className='flex flex-row items-center text-xl mb-2 gap-2'>
 						I'm a{' '}
-						<Highlight className='bg-white dark:bg-neutral-800 px-2 py-2 rounded-lg'>
+						<Highlight className='bg-white dark:bg-neutral-800 px-2 py-2 rounded-lg w-[16rem] sm:w-[30rem]'>
 							<WordRotate
 								className='text-xl sm:text-3xl md:text-4xl font-bold text-white dark:text-black'
 								words={[

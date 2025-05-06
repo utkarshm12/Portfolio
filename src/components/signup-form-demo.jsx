@@ -67,7 +67,7 @@ export default function SignupFormDemo() {
 						<Input
 							id='name'
 							name='name'
-							placeholder='Harry Potter'
+							placeholder='Utkarsh Mandloi'
 							type='text'
 							required
 						/>
@@ -79,7 +79,7 @@ export default function SignupFormDemo() {
 					<Input
 						id='email'
 						name='email'
-						placeholder='harrypotter@wizard.com'
+						placeholder='yourmail@something.com'
 						type='email'
 						required
 					/>
@@ -90,7 +90,7 @@ export default function SignupFormDemo() {
 					<textarea
 						id='message'
 						name='message'
-						placeholder='Your Spell Here'
+						placeholder='Your Note Here'
 						className='flex h-32 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50'
 						required
 					/>

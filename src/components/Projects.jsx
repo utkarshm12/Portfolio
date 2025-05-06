@@ -12,10 +12,26 @@ const projects = [
 	{
 		title: 'Portfolio',
 		description:
-			'An Introduction to my work, skills, and experience. A place to showcase my projects and achievements.',
+			'An Introduction to my work, skills, and experience. A place to showcase my projects and achievements',
 		link: '#',
 		image: '/images/projects/portfolio.png',
-		github: 'https://github.com/utkarshmandloi12/Portfolio',
+		github: 'https://github.com/utkarshm12/Portfolio',
+	},
+	{
+		title: 'FestX',
+		description:
+			'An AI assistance to generate ATS friendly resume just by getting users public profile and basic information',
+		link: '/#Projects',
+		image: '/images/projects/festx.png',
+		github: 'https://github.com/utkarshm12/FestX',
+	},
+	{
+		title: 'Blogify',
+		description:
+			'Developed a modern platform with a minimalistic UI, enabling users to create, explore, and manage blogs efficiently',
+		link: '/#Projects',
+		image: '/images/projects/blogify.png',
+		github: 'https://github.com/Jitisha-khede/blogify-frontend',
 	},
 	{
 		title: 'Socion',
@@ -50,12 +66,5 @@ const projects = [
 		image: '/images/projects/flight_management.png',
 		github:
 			'https://github.com/utkarshmandloi12/Flight_Management_System',
-	},
-	{
-		title: 'Previous Portfolio',
-		description: 'A rookie portfolio by a first year student',
-		link: 'https://portfolio-sooty-five-24.vercel.app',
-		image: '/images/projects/old_portfolio.png',
-		github: 'https://github.com/utkarshmandloi12/Old_portfolio',
 	},
 ];

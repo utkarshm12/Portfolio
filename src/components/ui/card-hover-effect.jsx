@@ -31,27 +31,10 @@ export const HoverEffect = ({ items, className }) => {
 			{items.map((item, idx) => (
 				<Link
 					href={item?.link}
-					key={item?.link}
+					key={idx}
 					className='relative group  block p-2 h-full w-full'
 					onMouseEnter={() => setHoveredIndex(idx)}
 					onMouseLeave={() => setHoveredIndex(null)}>
-					<AnimatePresence>
-						{hoveredIndex === idx && (
-							<motion.span
-								className='absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl'
-								layoutId='hoverBackground'
-								initial={{ opacity: 0 }}
-								animate={{
-									opacity: 0.15,
-									transition: { duration: 0.1 },
-								}}
-								exit={{
-									opacity: 0,
-									transition: { duration: 0.1, delay: 0.1 },
-								}}
-							/>
-						)}
-					</AnimatePresence>
 					<CardContainer
 						className={cn(
 							'rounded-2xl m-0 h-96 w-full bg-tranparent relative z-50',
@@ -101,7 +84,7 @@ export const HoverEffect = ({ items, className }) => {
 				</Link>
 			))}
 			<div
-				className='relative flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 dark:bg-black md:shadow-xl  h-[30rem]'
+				className='relative flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 dark:bg-black md:shadow-xl w-[20rem] sm:w-full h-[32rem] sm:mt-6 sm:ml-3'
 				onClick={() =>
 					window.open('https://github.com/utkarshmandloi12', '_blank')
 				}>

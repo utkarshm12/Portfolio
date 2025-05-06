@@ -13,7 +13,7 @@ export default function Experience() {
 				'Focused on expanding my knowledge of the Stellar blockchain and its applications in global financial systems through hands-on involvement in tech events and workshops.',
 			name: 'Stellar',
 			designation: 'Regional Ambassidor (Jan 2025 - Present)',
-			src: '/images/experience/stellar.png',
+			src: '/images/experience/stellar.jpeg',
 		},
 		{
 			quote:
