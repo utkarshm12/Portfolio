@@ -22,7 +22,7 @@ const projects = [
 		description:
 			'An AI assistance to generate ATS friendly resume just by getting users public profile and basic information',
 		link: '/#Projects',
-		image: '/images/projects/festx.png',
+		image: '/images/projects/festx.jpeg',
 		github: 'https://github.com/utkarshm12/FestX',
 	},
 	{
